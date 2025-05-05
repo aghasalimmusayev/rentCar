@@ -1,0 +1,43 @@
+.booking{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.booking a{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font: 500 1.5rem "Roboto", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+.booking i{
+    margin-right: 15px;
+    font-size: 28px;
+}
+.whatsapp{background-color: #25D366;}
+.telegram{background-color: #0088CC;}
+.fast_booking{background-color: #FF914D;}
+.heading_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading_img{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.car_logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+.car_logos img{width: 100px;transition: .3s;}
+.car_logos img:hover{transform: translateY(-7px);opacity: 0.8;}

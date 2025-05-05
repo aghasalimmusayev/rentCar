@@ -1,0 +1,46 @@
+.top_panel{
+    background-color: #039BE5;
+    padding: 25px 0;
+
+}
+.top_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.left_site{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.right_site{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navlinks{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_img{
+    width: 200px;
+}
+.logo_img img{
+    width: 100%;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.links a{
+    font: 500 1rem "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
+}

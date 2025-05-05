@@ -1,0 +1,7 @@
+1. atdığım datayla bu tərzdə react da rentacar saytı yazırsınız. 
+2. əsas məqsəd componentlərə bölmək və propslarla işləməkdir.
+3. Nav, Home, Footer, Card komponentləri olsun
+4. Cardlar bir komponent kimi saxlanılsın və data ora propslarla getsin
+5. delete card əməliyyatı da olsun
+
+https://carrentbaku.az/
