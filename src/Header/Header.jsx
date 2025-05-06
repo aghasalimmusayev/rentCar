@@ -12,15 +12,15 @@ function Header() {
                 <div className="header_content">
                     <div className='booking'>
                         <a href="" className='whatsapp'>
-                            <i class="fa-brands fa-whatsapp"></i>
+                            <i className="fa-brands fa-whatsapp"></i>
                             <span>Book by Whatsapp</span>
                         </a>
                         <a href="" className='telegram'>
-                            <i class="fa-brands fa-telegram"></i>
+                            <i className="fa-brands fa-telegram"></i>
                             <span>Book by Telegram</span>
                         </a>
                         <a href="" className='fast_booking'>
-                            <i class="fa-solid fa-car"></i>
+                            <i className="fa-solid fa-car"></i>
                             <span>Click to fast Booking</span>
                         </a>
                     </div>

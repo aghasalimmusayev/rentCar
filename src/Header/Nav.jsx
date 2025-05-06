@@ -9,10 +9,10 @@ function Nav() {
                 <div className="container">
                     <div className="top_content">
                         <div className="left_site">
-                            <div><i class="fa-solid fa-phone"></i> +994 77 399 78 11</div>
-                            <div><i class="fa-solid fa-envelope"></i> aga77ams@gmail.com</div>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook"></i>
+                            <div><i className="fa-solid fa-phone"></i> +994 77 399 78 11</div>
+                            <div><i className="fa-solid fa-envelope"></i> aga77ams@gmail.com</div>
+                            <i className="fa-brands fa-instagram"></i>
+                            <i className="fa-brands fa-facebook"></i>
                         </div>
                         <div className="right_site">
                             <span>EN</span>
