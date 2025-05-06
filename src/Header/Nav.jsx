@@ -6,7 +6,7 @@ import MenuToggle from './MenuToggle'
 
 function Nav() {
     return (
-        <>
+        <nav>
             <div className="top_panel">
                 <div className="container">
                     <div className="top_content">
@@ -20,9 +20,11 @@ function Nav() {
                             <a href="">EN</a>
                             <a href="">AZ</a>
                             <a href="">RU</a>
+                            <DarkMode />
                         </div>
-                        <DarkMode />
-                        <MenuToggle />
+                        <div className='menu_toggle'>
+                            <MenuToggle />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,7 +40,7 @@ function Nav() {
                     </ul>
                 </div>
             </div>
-        </>
+        </nav>
     )
 }
 

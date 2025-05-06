@@ -11,7 +11,7 @@ function Header() {
             <div className="container">
                 <div className="header_content">
                     <div className='booking'>
-                        <a href="" className='whatsapp'>
+                        <a href="tel:+994773997811" className='whatsapp'>
                             <i className="fa-brands fa-whatsapp"></i>
                             <span>Book by Whatsapp</span>
                         </a>
