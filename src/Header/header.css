@@ -23,17 +23,45 @@
 .whatsapp{background-color: #25D366;}
 .telegram{background-color: #0088CC;}
 .fast_booking{background-color: #FF914D;}
+.heading{
+    margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+}
 .heading_content{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.heading_content h1{
+    font: 700 2rem "Saira", sans-serif;
+    color: black;
+}
+.heading_content p{
+    font: 400 1.2rem "Saira", sans-serif;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+.book_btn{
+    background-color: #0C9AE0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font: 600 0.9rem "Saira", sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+.book_btn:hover{color: black;}
 .heading_img{
     margin: 50px 0;
     display: flex;
     justify-content: center;
 }
 .car_logos{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

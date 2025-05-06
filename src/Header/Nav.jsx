@@ -1,6 +1,8 @@
 import React from 'react'
 import "./nav.css"
 import Logo from './Logo'
+import DarkMode from './DarkMode'
+import MenuToggle from './MenuToggle'
 
 function Nav() {
     return (
@@ -9,16 +11,18 @@ function Nav() {
                 <div className="container">
                     <div className="top_content">
                         <div className="left_site">
-                            <div><i className="fa-solid fa-phone"></i> +994 77 399 78 11</div>
-                            <div><i className="fa-solid fa-envelope"></i> aga77ams@gmail.com</div>
-                            <i className="fa-brands fa-instagram"></i>
-                            <i className="fa-brands fa-facebook"></i>
+                            <a href="tel:+994773997811"><i className="fa-solid fa-phone"></i>+994773997811</a>
+                            <a href="mailto:aga77ams@gmail.com"><i className="fa-solid fa-envelope"></i>aga77ams@gmail.com</a>
+                            <a href=""><i className="fa-brands fa-instagram"></i></a>
+                            <a href=""><i className="fa-brands fa-facebook"></i></a>
                         </div>
                         <div className="right_site">
-                            <span>EN</span>
-                            <span>AZ</span>
-                            <span>RU</span>
+                            <a href="">EN</a>
+                            <a href="">AZ</a>
+                            <a href="">RU</a>
                         </div>
+                        <DarkMode />
+                        <MenuToggle />
                     </div>
                 </div>
             </div>

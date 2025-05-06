@@ -1,0 +1,13 @@
+.main_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_heading h2{
+    font: 800 3rem "Saira", sans-serif;
+}
+.main_heading span{color: #234896;}
+.main_heading p{
+    font: 600 1.5rem "Saira", sans-serif;
+    color: #234896;
+}
