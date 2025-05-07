@@ -11,6 +11,9 @@ function Nav({ setText }) {
     function axtar() {
         setText(searchText)
     }
+    function openCart(){
+        $(".cart_box").slideDown()
+    }
 
     return (
         <nav>
@@ -38,7 +41,7 @@ function Nav({ setText }) {
                                 <a href="">EN</a>
                                 <a href="">AZ</a>
                                 <a href="">RU</a>
-                                <i className="fa-solid fa-cart-shopping"></i>
+                                <i className="fa-solid fa-cart-shopping" onClick={openCart}></i>
                                 <DarkMode />
                             </div>
                         </div>

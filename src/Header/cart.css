@@ -1,0 +1,117 @@
+.shopping_cart {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(3, 155, 229, 0.2);
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.close_btn{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.close_btn i{
+    font-size: 28px;
+    cursor: pointer;
+    padding: 7px;
+}
+.shopping_cart h3 {
+    color: #039BE5;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #039BE5;
+    padding-bottom: 10px;
+}
+.items {margin-bottom: 20px;}
+.item_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(3, 155, 229, 0.2);
+    position: relative;
+}
+.item_img {
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+.item_img img {
+    width: 100px;
+    height: 80px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 1px solid rgba(3, 155, 229, 0.3);
+    background-color: #f7f7f7;
+}
+.item_price {
+    margin: 0;
+    color: #444;
+    font-weight: 500;
+}
+.item_content span {
+    flex: 1;
+    background-color: rgba(3, 155, 229, 0.1);
+    padding: 6px 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    margin: 0 15px;
+}
+.item_total {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    color: #039BE5;
+    margin: 0;
+}
+.shopping_cart>p {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #039BE5;
+    margin: 20px 0;
+    padding-top: 10px;
+    border-top: 2px solid rgba(3, 155, 229, 0.2);
+}
+.item_btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.item_btn button {
+    width: 200px;
+    padding: 12px;
+    background-color: #039BE5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.shopping_cart button:hover {background-color: #0288D1;}
+
+@media (max-width: 480px) {
+    .item_content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 20px;
+    }
+    .item_img {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .item_content span {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .item_total {align-self: flex-end;}
+}

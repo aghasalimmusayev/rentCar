@@ -3,10 +3,11 @@ import Nav from './Nav'
 import "./header.css"
 import headerImg from "../img/cars-bg.webp"
 import CarLogo from './CarLogo'
+import Cart from './Cart'
 
 function Header({ text, setText }) {
     return (
-        <>
+        <header>
             <Nav text={text} setText={setText} />
             <div className="container">
                 <div className="header_content">
@@ -39,8 +40,11 @@ function Header({ text, setText }) {
                         </div>
                     </div>
                 </div>
+                <div className='cart_box'>
+                    <Cart />
+                </div>
             </div>
-        </>
+        </header>
     )
 }
 
