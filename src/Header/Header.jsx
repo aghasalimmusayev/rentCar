@@ -4,10 +4,10 @@ import "./header.css"
 import headerImg from "../img/cars-bg.webp"
 import CarLogo from './CarLogo'
 
-function Header() {
+function Header({ text, setText }) {
     return (
         <>
-            <Nav />
+            <Nav text={text} setText={setText} />
             <div className="container">
                 <div className="header_content">
                     <div className='booking'>

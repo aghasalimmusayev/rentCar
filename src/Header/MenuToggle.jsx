@@ -1,7 +1,25 @@
 import React from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 
 const MenuToggle = () => {
+
+  useEffect(() => {
+    $("#checkbox").change(function () {
+      if ($(this).is(":checked")) {
+        $(".navlinks").slideDown()
+        // $("left_site").slideDown()
+        // $("right_site").slideDown()
+      }
+      else {
+        $(".navlinks").slideUp()
+        // $(".left_site").slideUp()
+        // $(".right_site").slideUp()
+      }
+    })
+  }, [])
+
+
   return (
     <StyledWrapper>
       <div>

@@ -2,9 +2,7 @@ import React from 'react'
 import "./cars.css"
 
 function Cars({ data, sil }) {
-    if (!data || !Array.isArray(data)) {
-        return <p>Data yoxdur və ya düzgün deyil</p>
-    }
+
     return (
         <div className='car_models'>
             {data.map(item => (
