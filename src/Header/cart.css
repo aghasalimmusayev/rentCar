@@ -2,116 +2,221 @@
     position: relative;
     width: 100%;
     max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+    min-width: 300px;
+    margin: 10px auto;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(3, 155, 229, 0.2);
+    box-shadow: 0 2px 8px rgba(3, 155, 229, 0.15);
     background-color: white;
     font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
+    height: 70vh;
 }
-.close_btn{
+.close_btn {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 10px;
 }
-.close_btn i{
-    font-size: 28px;
+.close_btn i {
+    font-size: 24px;
     cursor: pointer;
-    padding: 7px;
+    padding: 5px;
 }
 .shopping_cart h3 {
     color: #039BE5;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
     border-bottom: 2px solid #039BE5;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
-.items {margin-bottom: 20px;}
+.items {margin-bottom: 15px;}
 .item_content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
     border-bottom: 1px solid rgba(3, 155, 229, 0.2);
     position: relative;
+}
+.left_column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .item_img {
     display: flex;
     align-items: center;
-    flex: 2;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .item_img img {
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 60px;
     border-radius: 6px;
     object-fit: cover;
-    margin-right: 15px;
+    margin-right: 10px;
     border: 1px solid rgba(3, 155, 229, 0.3);
     background-color: #f7f7f7;
+}
+.item_marka {
+    font: 600 1.1rem "Roboto", sans-serif;
+    margin-bottom: 8px;
 }
 .item_price {
     margin: 0;
     color: #444;
     font-weight: 500;
+    font-size: 0.9rem;
 }
-.item_content span {
-    flex: 1;
-    background-color: rgba(3, 155, 229, 0.1);
-    padding: 6px 10px;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: 500;
+.item_remove{
+    margin-top: 10px;
+    font: 500 1rem "Roboto", sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.item_remove i{
+    color: #0288c7;
+    margin-right: 5px;
+}
+.counter {margin: 10px 0;}
+.count_box {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: fit-content;
+}
+.count_box button:first-child {
+    background-color: #039BE5;
+    color: white;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.count_box button:last-child {
+    background-color: #039BE5;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.count_box button:hover {background-color: #0288c7;}
+.count_box button:active {background-color: #0277b3;}
+.count {
+    font-size: 16px;
+    font-weight: bold;
     color: #333;
-    margin: 0 15px;
+    min-width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f5f5f5;
 }
 .item_total {
-    flex: 1;
-    text-align: right;
+    align-self: flex-end;
     font-weight: bold;
     color: #039BE5;
     margin: 0;
+    font-size: 0.9rem;
 }
 .shopping_cart>p {
     text-align: right;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #039BE5;
-    margin: 20px 0;
-    padding-top: 10px;
+    margin: 15px 0;
+    padding-top: 8px;
     border-top: 2px solid rgba(3, 155, 229, 0.2);
 }
-.item_btn{
+.item_btn {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .item_btn button {
-    width: 200px;
-    padding: 12px;
+    width: 100%;
+    max-width: 160px;
+    padding: 10px;
     background-color: #039BE5;
     color: white;
     border: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.shopping_cart button:hover {background-color: #0288D1;}
+.item_btn button:hover {background-color: #0288D1;}
 
-@media (max-width: 480px) {
+@media (min-width: 541px) {
+    .shopping_cart {
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(3, 155, 229, 0.2);
+    }
+    .close_btn i {
+        font-size: 28px;
+        padding: 7px;
+    }
+    .shopping_cart h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .items {margin-bottom: 20px;}
     .item_content {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-bottom: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
     }
+    .left_column{flex-direction: row;}
     .item_img {
-        margin-bottom: 10px;
-        width: 100%;
+        width: auto;
+        margin-bottom: 0;
     }
-    .item_content span {
-        margin: 10px 0;
-        width: 100%;
+    .item_img img {
+        width: 100px;
+        height: 80px;
+        margin-right: 15px;
     }
-    .item_total {align-self: flex-end;}
+    .item_marka {font-size: 1.3rem;}
+    .item_price {font-size: 1rem;}
+    .counter {margin: 0 0 10px 10px;}
+    .count_box button:first-child,
+    .count_box button:last-child {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .count {
+        font-size: 18px;
+        min-width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .item_total {
+        flex: 1;
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    .shopping_cart>p {
+        font-size: 20px;
+        margin: 20px 0;
+        padding-top: 10px;
+    }
+    .item_btn button {
+        width: 200px;
+        padding: 12px;
+        font-size: 16px;
+    }
 }

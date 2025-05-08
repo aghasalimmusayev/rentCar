@@ -1,13 +1,13 @@
-.top_panel{position: relative;}
+.top_panel{
+    position: relative;
+    background-color: #039BE5;
+    padding: 15px 0;
+}
 .menu_toggle{
     display: initial;
     position: absolute;
-    top: 15px;
-    right: 5%;
-}
-.top_panel{
-    background-color: #039BE5;
-    padding: 15px 0;
+    top: 10px;
+    right: 0;
 }
 .top_content{height: fit-content;}
 /* .left_site{display: none;} */

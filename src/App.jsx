@@ -26,6 +26,10 @@ function App() {
     }
   }
 
+  function legvEt(id){
+    setcarArr(carArr.filter(item => item.id != id))
+  }
+
   function azalt(id) {
     let carSelected = carArr.map(item => item.id == id && item.count > 1 ? { ...item, count: item.count - 1 } : item)
     setcarArr(carSelected)
@@ -41,7 +45,7 @@ function App() {
 
   return (
     <>
-      <Header text={text} setText={setText} carArr={carArr} addToCart={addToCart} azalt={azalt} coxalt={coxalt}/>
+      <Header text={text} setText={setText} carArr={carArr} addToCart={addToCart} legvEt={legvEt} azalt={azalt} coxalt={coxalt}/>
       <Main data={data} filteredCars={filteredCars} sil={sil} addToCart={addToCart} />
     </>
   )
