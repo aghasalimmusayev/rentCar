@@ -5,7 +5,7 @@ import headerImg from "../img/cars-bg.webp"
 import CarLogo from './CarLogo'
 import Cart from './Cart'
 
-function Header({ text, setText }) {
+function Header({ text, setText, addToCart, carArr, azalt, coxalt }) {
     return (
         <header>
             <Nav text={text} setText={setText} />
@@ -41,7 +41,7 @@ function Header({ text, setText }) {
                     </div>
                 </div>
                 <div className='cart_box'>
-                    <Cart />
+                    <Cart addToCart={addToCart} carArr={carArr} azalt={azalt} coxalt={coxalt}/>
                 </div>
             </div>
         </header>

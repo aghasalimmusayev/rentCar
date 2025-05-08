@@ -1,35 +1,37 @@
 import React from 'react'
 import "./cart.css"
+import Counter from './Counter'
 
 function closeCart() {
     $(".cart_box").slideUp()
 }
 
-function Cart() {
+function Cart({ carArr, azalt, coxalt }) {
+
     return (
         <div className='shopping_cart'>
             <div className='close_btn'>
-                <i class="fa-solid fa-xmark" onClick={closeCart}></i>
+                <i className="fa-solid fa-xmark" onClick={closeCart}></i>
             </div>
             <h3>Cart</h3>
-            <div className='items'>
-                <div className='item_content'>
-                    <div className='item_img'>
-                        <img src="" alt="" />
-                        <p className='item_price'>Price</p>
+
+            {carArr.map(item => (
+                <div className='items' key={item.id}>
+                    <div className='item_content'>
+                        <div className='item_img'>
+                            <img src={item.img} alt="car" />
+                        </div>
+                        <div>
+                            <h4 className='item_marka'>{item.marka} {item.model}</h4>
+                            <p className='item_price'>{item.qiymet} ₼</p>
+                        </div>
+                        <span>{item.count}</span>
+                        <Counter count={item.count} id={item.id} azalt={azalt} coxalt={coxalt} />
+                        <p className='item_total'>Item Total</p>
                     </div>
-                    <span>Count</span>
-                    <p className='item_total'>Item Total</p>
                 </div>
-                <div className='item_content'>
-                    <div className='item_img'>
-                        <img src="" alt="" />
-                        <p className='item_price'>Price</p>
-                    </div>
-                    <span>Count</span>
-                    <p className='item_total'>Item Total</p>
-                </div>
-            </div>
+            ))}
+
             <p>Total price</p>
             <div className='item_btn'>
                 <button>Check out</button>

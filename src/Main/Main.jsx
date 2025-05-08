@@ -1,19 +1,8 @@
 import React, { useState } from 'react'
-import carData from "../data.js"
 import Cars from './Cars.jsx'
 import "./main.css"
 
-function Main({ text }) {
-
-    let [data, setData] = useState(carData)
-
-    function sil(id) {
-        setData(data.filter(item => item.id !== id))
-    }
-
-    let filteredCars = text
-        ? data.filter(item => item.marka.toLowerCase().includes(text.toLowerCase()))
-        : data
+function Main({ data, filteredCars, sil, addToCart }) {
 
     return (
         <div className='container'>
@@ -21,7 +10,7 @@ function Main({ text }) {
                 <p>Get the Best Offers</p>
                 <h2>Our <span> Featured </span> Cars</h2>
             </div>
-            <Cars data={filteredCars ? filteredCars : data} sil={sil} />
+            <Cars data={filteredCars ? filteredCars : data} sil={sil} addToCart={addToCart} />
         </div>
     )
 }
