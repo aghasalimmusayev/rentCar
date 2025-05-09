@@ -4,15 +4,18 @@ import Logo from './Logo'
 import DarkMode from './DarkMode'
 import MenuToggle from './MenuToggle'
 
-function Nav({ setText }) {
+function Nav({ setText, carArr }) {
 
     let [searchText, setSearchText] = useState("")
 
     function axtar() {
         setText(searchText)
     }
-    function openCart(){
+    function openCart() {
         $(".cart_box").slideDown()
+    }
+    function cartLength(){
+        return carArr.length > 0 ? true : false
     }
 
     return (
@@ -41,7 +44,10 @@ function Nav({ setText }) {
                                 <a href="">EN</a>
                                 <a href="">AZ</a>
                                 <a href="">RU</a>
-                                <i className="fa-solid fa-cart-shopping" onClick={openCart}></i>
+                                <div className='shopping_cart_box'>
+                                    <i className="fa-solid fa-cart-shopping" onClick={openCart}></i>
+                                    {cartLength && <span className='cart_length'>{carArr.length}</span>}
+                                </div>
                                 <DarkMode />
                             </div>
                         </div>

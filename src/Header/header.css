@@ -1,8 +1,36 @@
-header .container{position: relative;}
+:root{
+    --color_wh: #fff;
+    --color_wh2: #f7f7f7;
+    --color_blue: #039BE5;
+    --color_blue2: #0277b3;
+    --color_blue3: #0288c7;
+    --color_blue_dark: #039be54d;
+    --color_blue_dark2: #039be533;
+    --color_gray: #444;
+    --color_gray2: #333;
+    --color_gray3: #666;
+    --color_blc: #000;
+}
+body.dark {
+    --color_wh: #1a1a1a;
+    --color_wh2: #2d2d2d;
+    --color_blue: #4fc3f7;
+    --color_blue2: #4ba3d6;
+    --color_blue3: #4bb2e3;
+    --color_blue_dark: #4fc3f74d;
+    --color_blue_dark2: #4fc3f733;
+    --color_gray: #b3b3b3;
+    --color_gray2: #cccccc;
+    --color_gray3: #999999;
+    --color_blc: #e6e6e6;
+}
 .cart_box{
+    width: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 20;
     display: none;
 }
 .booking{
@@ -18,14 +46,14 @@ header .container{position: relative;}
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--color_wh);
 }
 .booking i{
     margin-right: 15px;
     font-size: 28px;
 }
 .whatsapp{background-color: #25D366;}
-.telegram{background-color: #0088CC;}
+.telegram{background-color: var(--color_blue2);}
 .fast_booking{background-color: #FF914D;}
 .heading{
     margin-top: 100px;
@@ -40,26 +68,27 @@ header .container{position: relative;}
 .heading_content h1{
     text-align: center;
     font: 700 2rem "Saira", sans-serif;
-    color: black;
+    color: var(--color_blc);
 }
 .heading_content p{
     font: 400 1.2rem "Saira", sans-serif;
+    color: var(--color_blc);
     text-align: center;
     width: 100%;
     margin: 30px;
     line-height: 20px;
 }
 .book_btn{
-    background-color: #0C9AE0;
+    background-color: var(--color_blue);
     padding: 10px 30px;
     border: none;
     border-radius: 30px;
-    color: #fff;
+    color: var(--color_wh);
     font: 600 0.9rem "Saira", sans-serif;
     cursor: pointer;
     transition: .3s;
 }
-.book_btn:hover{color: black;}
+.book_btn:hover{color: var(--color_blc);}
 .heading_img{
     width: 100%;
     margin: 50px 0;
@@ -80,7 +109,6 @@ header .container{position: relative;}
 .car_logos img:hover{transform: translateY(-7px);opacity: 0.8;}
 
 @media (min-width:840px) {
-    .booking{
-        display: flex;
-    }
+    .booking{display: flex;}
+    .cart_box{width: 550px;}
 }

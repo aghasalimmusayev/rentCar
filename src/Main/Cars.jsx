@@ -1,8 +1,12 @@
 import React from 'react'
 import "./cars.css"
 
-function Cars({ data, sil, addToCart }) {
+function Cars({ data, carArr, sil, addToCart }) {
 
+    function cartdaVar(id){
+        return carArr.find(item => item.id === id) ? false : true
+    }
+    
     return (
         <div className='car_models'>
             {data.map(item => (
@@ -14,7 +18,9 @@ function Cars({ data, sil, addToCart }) {
                     <p className='car_year'><i className="fa-solid fa-calendar-days"></i> {item.il}</p>
                     <p className='car_color'><i className="fa-solid fa-palette"></i> {item.reng}</p>
                     <button onClick={() => sil(item.id)}>DELETE</button>
-                    <button onClick={() => addToCart(item.id)}>ADD TO CART</button>
+                    <button onClick={() => addToCart(item.id)}>
+                        {cartdaVar(item.id) ? "ADD TO CART" : "IN YOUR CART"}
+                    </button>
                 </div>
             ))}
         </div>

@@ -8,13 +8,13 @@ const MenuToggle = () => {
     $("#checkbox").change(function () {
       if ($(this).is(":checked")) {
         $(".navlinks").slideDown()
-        // $("left_site").slideDown()
-        // $("right_site").slideDown()
+        $(".left_site").slideDown()
+        $(".right_site").slideDown()
       }
       else {
         $(".navlinks").slideUp()
-        // $(".left_site").slideUp()
-        // $(".right_site").slideUp()
+        $(".left_site").slideUp()
+        $(".right_site").slideUp()
       }
     })
   }, [])

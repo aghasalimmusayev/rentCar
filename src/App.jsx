@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <Header text={text} setText={setText} carArr={carArr} addToCart={addToCart} legvEt={legvEt} azalt={azalt} coxalt={coxalt}/>
-      <Main data={data} filteredCars={filteredCars} sil={sil} addToCart={addToCart} />
+      <Main data={data} filteredCars={filteredCars} carArr={carArr} sil={sil} addToCart={addToCart} />
     </>
   )
 }

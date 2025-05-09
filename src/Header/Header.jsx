@@ -8,7 +8,7 @@ import Cart from './Cart'
 function Header({ text, setText, addToCart, legvEt, carArr, azalt, coxalt }) {
     return (
         <header>
-            <Nav text={text} setText={setText} />
+            <Nav text={text} setText={setText} carArr={carArr} />
             <div className="container">
                 <div className="header_content">
                     <div className='booking'>

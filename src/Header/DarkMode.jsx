@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 const CompactDarkMode = () => {
+
+  useEffect(() => {
+    $(".theme-switch__checkbox").change(function () {
+      if ($(this).is(":checked")) {
+        $("body").addClass("dark")
+      }
+      else {
+        $("body").removeClass("dark")
+      }
+    })
+  }, [])
+
   return (
     <StyledWrapper>
       <label className="theme-switch">

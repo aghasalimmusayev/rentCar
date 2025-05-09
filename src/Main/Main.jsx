@@ -3,7 +3,7 @@ import Cars from './Cars.jsx'
 import "./main.css"
 import GoTop from './GoTop.jsx'
 
-function Main({ data, filteredCars, sil, addToCart }) {
+function Main({ data, filteredCars, carArr, sil, addToCart }) {
 
     return (
         <div className='container'>
@@ -12,7 +12,7 @@ function Main({ data, filteredCars, sil, addToCart }) {
                     <p>Get the Best Offers</p>
                     <h2>Our <span> Featured </span> Cars</h2>
                 </div>
-                <Cars data={filteredCars ? filteredCars : data} sil={sil} addToCart={addToCart} />
+                <Cars data={filteredCars ? filteredCars : data} carArr={carArr} sil={sil} addToCart={addToCart} />
                 <GoTop />
             </main>
         </div>
